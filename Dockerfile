@@ -9,5 +9,5 @@ RUN apk add --no-cache --update wget \
  && rm -r frp_0.8.1_linux_amd64* \
  && chmod +x /usr/local/bin/frps
 
-VOLUME /frp-data
+VOLUME /data
 ENTRYPOINT ["/usr/local/bin/frps", "-L", "console", "-c", "/data/frps.ini"]
