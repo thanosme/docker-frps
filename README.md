@@ -1,3 +1,5 @@
+[![](https://images.microbadger.com/badges/image/thanosme/frps.svg)](https://microbadger.com/images/thanosme/frps "Get your own image badge on microbadger.com")
+
 # frp
 
 What is frp?
@@ -8,7 +10,7 @@ Link to this project: https://github.com/fatedier/frp
 
 # About this image
 
-This images includes only the server binary "frps" and it is based on Alpine Linux for a small footprint (8MB).
+This images includes only the server binary "frps" and it is based on Alpine Linux for a small footprint (~8MB).
 
 A data volume must be mounted which will include the frps configuration and possibly the log file.
 
