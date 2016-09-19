@@ -23,3 +23,9 @@ docker run -d --name frps -v $frp-data:/data -p 7000:7000 -p 7500:7500 -p 2000-3
 ```
 
 Ports 2000-3000 are an example for priveleged ports. Basically you can open the ports you want based on your configuration.
+
+# How to build this image
+
+```
+docker build -t thanosme/frps:0.8.1 .
+```
