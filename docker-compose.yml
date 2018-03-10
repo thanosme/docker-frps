@@ -1,7 +1,7 @@
 frps:
   build: ./
   environment:
-    - FRPS_VERSION: "0.16.0"
+    - FRPS_VERSION= '0.16.0'
   ports:
     - "7000:7000"
     - "8080:8080"
