@@ -4,8 +4,11 @@ frps:
     - FRPS_VERSION= "0.16.0"
   ports:
     - "7000:7000"
+    - "7000:7000/udp"
     - "8080:8080"
     - "8480:8480"
     - "7500:7500"
   volumes:
     - ./data/:/data/:rw
+  restart: always
+  container_name: frps
