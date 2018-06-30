@@ -1,5 +1,5 @@
 frps:
-  build: ./
+  image: yahuiwong/frps:0.16.0
   environment:
     - FRPS_VERSION= "0.16.0"
   ports:
