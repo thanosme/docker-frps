@@ -1,5 +1,6 @@
 frps:
-  image: yahuiwong/frps:0.21.0
+  # image: yahuiwong/frps:0.21.0
+  build: .
   ports:
     - "7000:7000"
     - "7000:7000/udp"
