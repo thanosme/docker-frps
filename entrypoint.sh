@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 if [[ "${FRP_MODE}" != "s" ]];then
 ./frps -c /data/frps.ini

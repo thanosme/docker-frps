@@ -12,5 +12,4 @@ RUN apk add --no-cache --update wget \
  && chmod +x /usr/local/bin/frp${FRP_MODE}
 
 VOLUME /data
-COPY entrypoint.sh /
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT /usr/local/bin/frp${FRP_MODE} -c /data/frp${FRP_MODE}.ini
