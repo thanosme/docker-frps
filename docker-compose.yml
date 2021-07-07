@@ -1,0 +1,24 @@
+    
+version: '2'
+# 定义四个服务nginx,php,mysql,redis
+services:
+  frps:
+     yahuiwong/frp:frps
+    # build: .
+    ports:
+      - "7000:7000"
+      - "7000:7000/udp"
+      - "8080:8080"
+      - "8480:8480"
+      - "7500:7500"
+    volumes:
+      - ./data/:/data/:rw
+    restart: always
+    container_name: frps
+  frpc:
+    image: yahuiwong/frp:frpc
+    # build: .
+    volumes:
+      - ./data/:/data/:rw
+    restart: always
+    container_name: frpc

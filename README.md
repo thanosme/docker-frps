@@ -29,9 +29,14 @@ Ports 2000-3000 are an example for priveleged ports. Basically you can open the 
 # How to build this image
 
 ```
-git clone https://github.com/thanosme/docker-frps.git
+git clone https://github.com/YahuiWong/docker-frps.git
 
 cd docker-frps
 
-docker build -t thanosme/frps:0.8.1 .
+docker build -t yahuiwong/frps:0.20.0 .
+```
+or
+
+```sh
+docker pull yahuiwong/frps:0.20.0
 ```
